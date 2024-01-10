@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Order Form</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/PROJECT 1.html/PROJECT.html/HOME.html">Home</a></li>
+        <li><a href="/PROJECT 1.html/PROJECT.html/ABOUT.html">About us</a></li>
+        <li><a href="/PROJECT 1.html/PROJECT.html/contact .html">Contact us</a></li>
+        <li><a href="/PROJECT 1.html/PROJECT.html/Order.html">Order Something</a></li>
+
+    </ul>
+    <img src="/starbucks-coffee-logo-png-transparent.png" alt="logo" height="200px">
+
+
+
+    <h1>Order Coffee</h1>
+
+    <form action="process_order.php" method="POST">
+        <label for="coffeeType">Select Coffee Type:</label><br>
+        <select id="coffeeType" name="coffeeType">
+            <option value="espresso">Espresso</option>
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="americano">Americano</option>
+            <option value="macchiato">Macchiato</option>
+        </select>
+        <br><br>
+
+        <label for="size">Select Size:</label><br>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small</label><br>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label><br><br>
+
+        <label for="extras">Select Extras (hold Ctrl to select multiple):</label><br>
+        <select id="extras" name="extras[]" multiple>
+            <option value="sugar">Sugar</option>
+            <option value="milk">Milk</option>
+            <option value="cream">Cream</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="caramel">Caramel</option>
+        </select>
+        <br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <br><br>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+        
+    
+    
+<div>
+    <footer>
+        <h5>Follow Us:</h5>
+        <a href="https://www.instagram.com/starbucksindia/"><img src="/Instagram logo.jpeg" alt="instagram"
+                height="50px"></a>
+        <a href="https://www.facebook.com/starbucksindia"><img src="/facebook.png" alt="facebook" height="50px"></a>
+    </footer>
+
+</body>
+
+</html>
